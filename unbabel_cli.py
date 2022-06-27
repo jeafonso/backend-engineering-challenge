@@ -88,7 +88,7 @@ def process_data(data: list):
     # Replace current timestamp seconds with 00
     current_time_zeroed = current_time.replace(second=0)
     
-    # Get current delta of current timestamp - 10 minutes
+    # Get current delta of current timestamp
     current_delta = current_time_zeroed - timedelta(minutes=int(window_size))
 
     # Loop to check JSON data
