@@ -50,7 +50,6 @@ def init_procc(argv: list[str]):
             if int(window_size) == 0:
                 sys.exit(2)
 
-    # Everything is correct, check if file opens
     return input_file
               
 
@@ -67,7 +66,6 @@ def file_verify(file: str):
         print("Invalid JSON file!")
         sys.exit(2)
 
-    # File opens correctly, process JSON data
     jsonLoaded = json.load(f)
     f.close()
 
@@ -107,7 +105,6 @@ def process_data(data: list):
         else:
             break
 
-    # Data is arranged, calling this function will prepare the gathered data for output
     return values, str(current_time_zeroed)[:-7]   
     
 def prepare_output(data: dict, timestamp: str):
@@ -157,7 +154,6 @@ def prepare_output(data: dict, timestamp: str):
         tmp = {}
         timestamp = str(current_delta)
             
-    # Everything is ready to be printed
     return outputList
 
 def output(data: list):
