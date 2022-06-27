@@ -41,8 +41,10 @@ The output file would be something in the following format.
 
 To run this command line application, just have the python script located in the same directory as you have the input json file. Also, bellow is an example of a command to run this appliction and get a preview of the last 10 min
 
-	unbabel_cli --input_file events.json --window_size 10
+	python3 unbabel_cli --input_file events.json --window_size 10
 	
 
 You can find comments describing code functionality in the .py file itself.
+
+Instead of using --input_file and --window_size, you can just use -i or -w and pass the argument after. You can also use -h or --help command to get a view of the help menu.
 
